@@ -1,0 +1,149 @@
+{
+  "id": "1710768",
+  "name": "生物样本-biosample",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "国家大项目生物样本系统",
+  "glyphs": [
+    {
+      "icon_id": "14714937",
+      "name": "eth_logo01",
+      "font_class": "eth_logo01",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "14107338",
+      "name": "nobind",
+      "font_class": "nobind",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "14050777",
+      "name": "model_close",
+      "font_class": "model_close",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "9526762",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "13921116",
+      "name": "bio_logo",
+      "font_class": "bio_logo",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "952610",
+      "name": "二维码",
+      "font_class": "shape",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "13865848",
+      "name": "leftmenu_blood",
+      "font_class": "leftmenu_blood",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "13865849",
+      "name": "leftmenu_hair",
+      "font_class": "leftmenu_hair",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13865850",
+      "name": "leftmenu_shit",
+      "font_class": "leftmenu_shit",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "13865851",
+      "name": "leftmenu_pit",
+      "font_class": "leftmenu_pit",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "13865696",
+      "name": "fold_line",
+      "font_class": "fold_line",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "13865697",
+      "name": "unfold_line",
+      "font_class": "unfold_line",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "13865340",
+      "name": "sucess_fill",
+      "font_class": "sucess_fill",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "13865342",
+      "name": "nocertify_down_fill",
+      "font_class": "nocertify_down_fill",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "13865289",
+      "name": "difsmple_fill",
+      "font_class": "difsmple_fill",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "13865290",
+      "name": "nocertify_fill",
+      "font_class": "nocertify_fill",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "13037401",
+      "name": "三角下标（正方形）",
+      "font_class": "right-flag-1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12757274",
+      "name": "扫描",
+      "font_class": "saomiao",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "11240392",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11240394",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}

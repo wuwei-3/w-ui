@@ -1,0 +1,99 @@
+{
+  "开发指南": [
+    {
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "font 字体",
+          "name": "font",
+          "path": "/font"
+        },
+        {
+          "desc": "color 颜色",
+          "name": "color",
+          "path": "/color"
+        },
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        },
+        {
+          "desc": "Input 输入框",
+          "name": "input",
+          "path": "/input"
+        },
+        {
+          "desc": "Header 头",
+          "name": "header",
+          "path": "/header"
+        },
+        {
+          "desc": "Footer 尾",
+          "name": "footer",
+          "path": "/footer"
+        },
+        {
+          "desc": "NavMenu 左侧导航",
+          "name": "nav-menus",
+          "path": "/navMenu"
+        },
+        {
+          "desc": "Table 表格",
+          "name": "table",
+          "path": "/table"
+        }
+      ]
+    },
+    {
+      "desc": "视图组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Dialog 弹框",
+          "name": "dialog",
+          "path": "/dialog"
+        },
+        {
+          "desc": "Page 分页",
+          "name": "page",
+          "path": "/page"
+        }
+      ]
+    },
+    {
+      "desc": "页面组件",
+      "path": "/page",
+      "items": [
+        {
+          "desc": "Login 登录页",
+          "name": "login",
+          "path": "/login"
+        },
+        {
+          "desc": "ReserveTime 时间预定页",
+          "name": "reserveTime",
+          "path": "/reserveTime"
+        }
+      ]
+    }
+  ]
+}
