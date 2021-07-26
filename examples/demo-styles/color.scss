@@ -1,0 +1,22 @@
+.b-color {
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+  }
+  .item-box {
+    @include flex;
+    .item {
+      width: 207px;
+      height: 115px;
+      padding: 16px;
+      box-sizing: border-box;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

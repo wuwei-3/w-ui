@@ -1,0 +1,6 @@
+.b-btn {
+  @include fh;
+  > div {
+    margin-right: 16px;
+  }
+}

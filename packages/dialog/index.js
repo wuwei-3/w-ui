@@ -4,12 +4,12 @@
  * @Autor: wuwei3
  * @Date: 2020-05-15 16:52:55
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 16:53:49
+ * @LastEditTime: 2021-03-18 16:10:05
  */
-import Dialog from './src/dialog';
+import Index from "./src/index.vue";
 
-Dialog.install = function(Vue) {
-  Vue.component(Dialog.name, Dialog);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Dialog;
+export default Index;

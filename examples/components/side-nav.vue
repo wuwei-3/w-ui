@@ -4,7 +4,7 @@
  * @Autor: wuwei3
  * @Date: 2020-05-07 16:10:40
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-07 20:06:17
+ * @LastEditTime: 2021-04-08 10:09:51
  -->
 <template>
   <div class="side-nav">
@@ -18,7 +18,7 @@
         class="side-nav-items"
         v-for="(nav, n) in data[title]"
         :key="n"
-        v-show="nav.name != 'home' && nav.name != 'index'"
+        v-show="nav.name != 'home' && nav.name != 'index' && nav.name != 'test'"
       >
         <router-link
           :class="$route.name === nav.name ? 'active' : ''"
@@ -32,8 +32,10 @@
             :to="{ name: item.name }"
             :class="$route.name === item.name ? 'active' : ''"
             class="slid-nav-component"
-            >{{ item.desc }}</router-link
           >
+            <span class="s-right">{{ item.name }}</span>
+            <span class="s-left">{{ item.desc }}</span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -41,7 +43,7 @@
 </template>
 
 <script>
-import navConf from '../config/nav.json';
+import navConf from "../config/nav.json";
 export default {
   data() {
     return {
@@ -50,21 +52,21 @@ export default {
   },
 };
 </script>
-<style lang="scss" scope>
+<style lang="scss">
 .side-nav {
   display: inline-block;
   margin: 32px 0;
   padding: 0;
   color: #3f536e;
-  background-color: white;
+  background-color: $bi-grey_rey1;
   z-index: 99;
   .group-container {
     margin-bottom: 20px;
   }
   .side-nav-title {
     padding: 0 24px 8px;
-    color: #8dabc4;
-    font-size: 12px;
+    color: #2c405a;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -73,6 +75,10 @@ export default {
     font-size: 14px;
     font-weight: normal;
     line-height: 1.8;
+    p {
+      color: #00000073 !important;
+      transition: all 0.3s;
+    }
     a {
       display: block;
       position: relative;
@@ -94,14 +100,20 @@ export default {
       display: block;
       position: relative;
       padding: 6px 24px 6px 32px;
-      color: #616367;
+      color: #314659;
       font-size: 14px;
       &:hover {
-        color: #409eff;
+        color: $bi-core_main;
+      }
+      .s-left {
+        font-size: 12px;
+        margin-left: 6px;
+        font-weight: 400;
+        opacity: 0.67;
       }
     }
     .active {
-      color: #409eff;
+      color: $bi-core_main;
     }
   }
 }

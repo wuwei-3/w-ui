@@ -4,7 +4,7 @@
  * @Autor: wuwei3
  * @Date: 2020-05-07 16:10:32
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-07 16:42:15
+ * @LastEditTime: 2021-03-18 15:08:24
  -->
 <template>
   <header
@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss">
 .page-header {
-  background-color: white;
+  background-color: $bi-grey_rey1;
   box-shadow: 0 10px 60px 0 #1d1d1f12;
   opacity: 0.98;
   position: relative !important;

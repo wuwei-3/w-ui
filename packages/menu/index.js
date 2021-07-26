@@ -4,12 +4,12 @@
  * @Autor: wuwei3
  * @Date: 2020-05-18 16:17:29
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-18 16:22:50
+ * @LastEditTime: 2021-03-18 16:08:26
  */
-import Menu from './src/menu.vue';
+import Index from "./src/index.vue";
 
-Menu.install = function(Vue) {
-  Vue.component(Menu.name, Menu);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Menu;
+export default Index;

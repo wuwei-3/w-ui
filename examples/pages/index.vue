@@ -4,17 +4,17 @@
  * @Autor: wuwei3
  * @Date: 2020-05-07 15:43:47
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-08 11:04:22
+ * @LastEditTime: 2021-03-18 15:03:20
  -->
 <template>
   <div class="pg-index">
     <div class="index-container">
       <img src="../assets/logo.png" />
-      <p>国家项目条线，公共UI 组件库</p>
+      <p>儿童脑智发育平台，公共UI 组件库</p>
     </div>
     <div class="separate-panel">
       <div class="about">
-        <router-link :to="{ name: 'giud' }" class="hvr-float-shadow"
+        <router-link :to="{ name: 'Giud' }" class="hvr-float-shadow"
           >开始使用</router-link
         >
         <a

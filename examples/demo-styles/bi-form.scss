@@ -1,0 +1,13 @@
+.bi-from {
+  @include wh;
+  box-sizing: border-box;
+  .t-form {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .t-span {
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -4,13 +4,13 @@
  * @Autor: wuwei3
  * @Date: 2020-05-15 15:18:58
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-15 16:17:10
+ * @LastEditTime: 2021-03-18 16:11:29
  */
 
-import Page from './src/page.vue';
+import Index from "./src/index.vue";
 
-Page.install = function(Vue) {
-  Vue.component(Page.name, Page);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Page;
+export default Index;

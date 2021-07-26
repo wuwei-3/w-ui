@@ -1,19 +1,25 @@
+/*
+ * @Description: eslint 代码格式化
+ * @Version: 1.0
+ * @Autor: wuwei3
+ * @Date: 2020-03-27 11:41:13
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-12-21 19:32:41
+ */
 module.exports = {
+  root: true,
   env: {
-    // Environments，指定代码的运行环境。不同的运行环境，全局变量不一样，指明运行环境这样ESLint就能识别特定的全局变量。同时也会开启对应环境的语法支持，例如：es6。
-    browser: true,
-    es6: true,
-    node: true,
+    node: true
   },
   extends: ['eslint:recommended', 'plugin:vue/essential'],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
-    parser: 'babel-eslint',
+    parser: 'babel-eslint'
   },
   plugins: ['vue'],
   rules: {
@@ -116,7 +122,7 @@ module.exports = {
     'no-var': 0, //禁用var，用let和const代替
     'no-warning-comments': [
       1,
-      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' }
     ], //不能有警告备注
     'no-with': 2, //禁用with
     'array-bracket-spacing': [2, 'never'], //是否允许非空数组里面有多余的空格
@@ -190,6 +196,6 @@ module.exports = {
     'vars-on-top': 2, //var必须放在作用域顶部
     'wrap-iife': [2, 'inside'], //立即执行函数表达式的小括号风格
     'wrap-regex': 0, //正则表达式字面量用小括号包起来
-    yoda: [2, 'never'], //禁止尤达条件
-  },
-};
+    yoda: [2, 'never'] //禁止尤达条件
+  }
+}

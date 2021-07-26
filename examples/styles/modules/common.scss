@@ -1,0 +1,365 @@
+/* 
+ * 公共样式基本规则
+ * 1，所有颜色统一使用scss变量，不允许出现任何自定义值。
+ * 2，同一页面有公共样式尽量抽取到公共样式，命名规则：bi+[模块]_命名，例：bi-font_warning。
+ * 3，自定义公共组件要兼容elment ui所有API，具体请看例子。
+ * 4，css命名方式尽量语义化，严谨，有规律。
+ * 5，所有页面开发配置统一按照脑科学前端开发规则：http://wiki.iflytek.com/pages/viewpage.action?pageId=289324376，没有权限请联系wuwei3@iflytek.com。
+*/
+
+/* 公共颜色变量 */
+$bi-core_main: #005bfa; // 科技蓝色系 -- 主色
+$bi-main_sci1: #d4edff;
+$bi-main_sci2: #a3cfff;
+$bi-main_sci3: #65a8fe;
+$bi-main_sci4: #3e8afb;
+$bi-main_sci5: #0048d9;
+$bi-main_sci6: #0034b3;
+$bi-main_sci7: #002490;
+$bi-main_sci8: #001977;
+
+$bi-core_green: #0acc7e; // 科技绿色系 -- 主色
+$bi-green_een1: #ccffdd;
+$bi-green_een2: #99f9bc;
+$bi-green_een3: #64efa0;
+$bi-green_een4: #3ee094;
+$bi-green_een5: #0acc7e;
+$bi-green_een6: #09af7c;
+$bi-green_een7: #019377;
+$bi-green_een8: #01766a;
+$bi-green_een9: #006161;
+
+$bi-core-white: white; // 白色
+$bi-core-black: black; // 白
+
+$bi-core_grey: #f3f3f3; // 中灰色  -- 主色
+$bi-core_dis: #bfbfbf; // 中灰色禁用  -- 主色
+$bi-grey_rey1: #ffffff;
+$bi-grey_rey2: #fafafa;
+$bi-grey_rey3: #f3f3f3;
+$bi-grey_rey4: #ededed;
+$bi-grey_rey5: #e6e6e6;
+$bi-grey_rey6: #d9d9d9;
+$bi-grey_rey7: #cccccc;
+$bi-grey_rey8: #f2f2f2;
+$bi-grey_rey9: #e5e5e5;
+$bi-grey_rey10: #d9d9d9;
+$bi-grey_rey11: #8c8c8c;
+$bi-grey_rey12: #595959;
+$bi-grey_rey13: #191919;
+
+$bi-core_warning: #ffbc04; // 智慧橙  -- 主色
+$bi-yello_llo1: #fff7cd;
+$bi-yello_llo2: #ffec9a;
+$bi-yello_llo3: #ffdf69;
+$bi-yello_llo4: #ffd243;
+$bi-yello_llo5: #ffbd02;
+$bi-yello_llo6: #db9c02;
+$bi-yello_llo7: #b77e04;
+$bi-yello_llo8: #936100;
+$bi-yello_llo9: #7a4d00;
+
+$bi-core_error: #fe6041; // 智慧红色系  -- 主色
+$bi-error_ror1: #ffdbd6;
+$bi-error_ror2: #fec2b3;
+$bi-error_ror3: #feb18c;
+$bi-error_ror4: #fe9270;
+$bi-error_ror5: #fe6041;
+$bi-error_ror6: #db3f30;
+$bi-error_ror7: #b72220;
+$bi-error_ror8: #93141d;
+$bi-error_ror9: #790b1d;
+
+/* 其他辅助颜色 */
+$bi-menu_hover: #cae1ff;
+$bi-message_info: #ceeeff;
+$bi-message_success: #abffd7;
+$bi-message_warning: #fff7c2;
+$bi-message_error: #ffd9d5;
+$bi-app_border: #dcdfe6;
+$bi-app_color_main: #314659;
+$bi-tag_color: #0d1a26;
+$bi-selector_color: #3182bd;
+$bi-string_color: #756bb1;
+$bi-th_color: #909399;
+$bi-td_color: #606266;
+
+/* 文字颜色 */
+$bi-font_color25: #00000040;
+$bi-font_color35: #00000059;
+$bi-font_color65: #000000a6;
+$bi-font_color95: #000000a6;
+
+.bi-upload-icon {
+  width: 6px;
+  height: 6px;
+  background: $bi-core_white;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.bi-upload_success {
+  color: $bi-font_color95;
+  i {
+    background: #19a63e;
+  }
+}
+.bi-upload_error {
+  color: $bi-font_color95;
+  i {
+    background: #ff4d50;
+  }
+}
+.bi-upload_loading {
+  color: $bi-font_color95;
+  i {
+    color: $bi-core_main;
+    margin-right: 3px;
+  }
+}
+
+/* other 公共样式 */
+.bi-label_color {
+  color: $bi-font_color35;
+}
+.bi-value_color {
+  color: $bi-font_color65;
+}
+
+/* 统一样式消息 */
+.el-message {
+  padding: 13px 16px;
+}
+.el-message--info {
+  background: $bi-message_info;
+  border-color: $bi-message_info;
+}
+.el-message--success {
+  background: $bi-message_success;
+  border-color: $bi-message_success;
+}
+.el-message--warning {
+  background: $bi-message_warning;
+  border-color: $bi-message_warning;
+}
+.el-message--error {
+  background: $bi-message_error;
+  border-color: $bi-message_error;
+}
+.el-radio__label {
+  color: $bi-core-black;
+  padding-left: 8px;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: $bi-core_main;
+  background: $bi-core-white;
+}
+.el-radio__inner:after {
+  width: 8px;
+  height: 8px;
+  background-color: $bi-core_main;
+}
+.is-checked {
+  .el-checkbox__label {
+    color: $bi-core-black;
+    padding-left: 8px;
+  }
+}
+
+/* margin */
+@each $i in top, right, bottom, left {
+  @each $j in 4, 8, 12, 16, 18, 24, 30 {
+    .m-#{$i}#{$j} {
+      margin-#{$i}: $j + px;
+    }
+  }
+}
+
+/* padding */
+@each $p in top, right, bottom, left {
+  @each $q in 4, 8, 12, 16, 18, 24, 30 {
+    .p-#{$p}#{$q} {
+      padding-#{$p}: $q + px;
+    }
+  }
+}
+
+/* mixin 集 */
+/* 字体大小粗细 */
+@mixin sw($font, $weight: 400) {
+  font-size: $font;
+  font-weight: $weight;
+}
+
+/* 宽度高度,默认值100% */
+@mixin wh($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+/* 字符串自动截取 */
+@mixin el {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 清除自身样式 */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* positon 居中2 */
+@mixin pcc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* flex 居中3 */
+@mixin fcc() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* absolute 脱离文档流 定位终 按照 上 有 下 左规则 */
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  @if ($left!= "" & & $left!=null) {
+    left: $left;
+  }
+  @if ($right!= "" & & $right!=null) {
+    right: $right;
+  }
+  @if ($top!= "" & & $top!=null) {
+    top: $top;
+  }
+  @if ($bottom!= "" & & $bottom!=null) {
+    bottom: $bottom;
+  }
+}
+
+/* flex 排列顺序 */
+@mixin flex($wrap: wrap) {
+  display: flex;
+  flex-wrap: $wrap;
+}
+
+/* 字体 - 颜色 - 粗黑 */
+@mixin scw($size: 14px, $color: #333, $weight: 400) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+/* 上下左右居中 */
+@mixin fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* img 标签使用样式 */
+@mixin backgroundImage($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat 0 0;
+}
+
+/* 上下居中 */
+@mixin fh {
+  display: flex;
+  align-items: center;
+}
+
+/**
+ * @description: 全局动画效果
+ */
+@keyframes flyin {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  75% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ellipse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* class样式 */
+.bi-color-error {
+  color: $bi-core_error;
+}
+.bi-color-main {
+  color: $bi-core_main;
+}
+.bi-color-green {
+  color: $bi-core_green;
+}
+.bi-color-grey {
+  color: $bi-core_grey;
+}
+.bi-color-warning {
+  color: $bi-core_warning;
+}
+.bi-color-warning {
+  color: $bi-core_error;
+}
+
+.b-fh {
+  @include fh;
+}
+
+.b-fcc {
+  @include fcc;
+}

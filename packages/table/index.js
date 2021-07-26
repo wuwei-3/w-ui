@@ -4,12 +4,12 @@
  * @Autor: wuwei3
  * @Date: 2020-05-18 17:27:35
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-18 17:28:14
+ * @LastEditTime: 2021-03-18 16:08:04
  */
-import Table from './src/table.vue';
+import Index from "./src/index.vue";
 
-Table.install = function(Vue) {
-  Vue.component(Table.name, Table);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Table;
+export default Index;

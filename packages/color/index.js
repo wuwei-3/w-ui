@@ -4,12 +4,12 @@
  * @Autor: wuwei3
  * @Date: 2020-05-11 15:42:36
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-14 14:38:45
+ * @LastEditTime: 2021-03-18 16:09:35
  */
-import Color from './src/color.vue';
+import Index from "./src/index.vue";
 
-Color.install = function(Vue) {
-  Vue.component(Color.name, Color);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Color;
+export default Index;

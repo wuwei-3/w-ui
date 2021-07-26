@@ -4,11 +4,11 @@
  * @Autor: wuwei3
  * @Date: 2020-05-07 15:41:31
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-07 21:05:52
+ * @LastEditTime: 2021-04-13 09:24:16
  */
-import Vue from 'vue';
-import Router from 'vue-router';
-import navConf from '../config/nav.json';
+import Vue from "vue";
+import Router from "vue-router";
+import navConf from "../config/nav.json";
 
 Vue.use(Router);
 
@@ -24,7 +24,7 @@ let addComponent = (router) => {
       addComponent(route.items);
       routes = routes.concat(route.items);
     } else {
-      if (route.type === 'pages') {
+      if (route.type === "pages") {
         route.component = (r) =>
           require.ensure([], () => r(require(`../pages/${route.name}.vue`)));
         return;

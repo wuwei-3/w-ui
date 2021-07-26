@@ -4,12 +4,12 @@
  * @Autor: wuwei3
  * @Date: 2020-05-11 15:42:36
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-05-14 15:48:36
+ * @LastEditTime: 2021-03-18 16:10:47
  */
-import Header from './src/header.vue';
+import Index from "./src/index.vue";
 
-Header.install = function(Vue) {
-  Vue.component(Header.name, Header);
+Index.install = function(Vue) {
+  Vue.component(Index.name, Index);
 };
 
-export default Header;
+export default Index;

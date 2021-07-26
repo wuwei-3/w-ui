@@ -1,0 +1,12 @@
+.b-input {
+  @include wh;
+  box-sizing: border-box;
+  .b-result {
+    min-height: 100px;
+    background: #f1f1f159;
+    margin-top: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+}

@@ -1,18 +1,18 @@
 {
   "开发指南": [
     {
-      "name": "giud",
+      "name": "Giud",
       "path": "/giud",
-      "desc": "介绍"
-    },
-    {
-      "name": "start",
-      "path": "/start",
       "desc": "快速开始"
     },
     {
       "name": "index",
       "path": "/",
+      "type": "pages"
+    },
+    {
+      "name": "test",
+      "path": "/test",
       "type": "pages"
     }
   ],
@@ -22,43 +22,68 @@
       "path": "/component",
       "items": [
         {
-          "desc": "font 字体",
-          "name": "font",
+          "desc": "字体",
+          "name": "Font",
           "path": "/font"
         },
         {
-          "desc": "color 颜色",
-          "name": "color",
+          "desc": "颜色",
+          "name": "Color",
           "path": "/color"
         },
         {
-          "desc": "Button 按钮",
-          "name": "button",
+          "desc": " 按钮",
+          "name": "Button",
           "path": "/button"
         },
         {
-          "desc": "Input 输入框",
-          "name": "input",
+          "desc": "输入框",
+          "name": "Input",
           "path": "/input"
         },
         {
-          "desc": "Header 头",
-          "name": "header",
+          "desc": "密码框",
+          "name": "InputPwd",
+          "path": "/inputPwd"
+        },
+        {
+          "desc": "下拉框",
+          "name": "SelectMore",
+          "path": "/selectMore"
+        },
+        {
+          "desc": "树形控件",
+          "name": "Tree",
+          "path": "/tree"
+        },
+        {
+          "desc": "头",
+          "name": "Header",
           "path": "/header"
         },
         {
-          "desc": "Footer 尾",
-          "name": "footer",
+          "desc": "尾",
+          "name": "Footer",
           "path": "/footer"
         },
         {
-          "desc": "NavMenu 左侧导航",
-          "name": "nav-menus",
+          "desc": "左侧导航",
+          "name": "NavMenus",
           "path": "/navMenu"
         },
         {
-          "desc": "Table 表格",
-          "name": "table",
+          "desc": "新左侧导航",
+          "name": "NewMenus",
+          "path": "/newMenu"
+        },
+        {
+          "desc": "Form",
+          "name": "Form",
+          "path": "/form"
+        },
+        {
+          "desc": "表格",
+          "name": "Table",
           "path": "/table"
         }
       ]
@@ -68,30 +93,122 @@
       "path": "/component",
       "items": [
         {
-          "desc": "Dialog 弹框",
-          "name": "dialog",
+          "desc": "弹框",
+          "name": "Dialog",
           "path": "/dialog"
         },
         {
-          "desc": "Page 分页",
-          "name": "page",
-          "path": "/page"
+          "desc": "分页",
+          "name": "Page",
+          "path": "/Page"
+        }
+      ]
+    },
+    {
+      "desc": "Other",
+      "path": "",
+      "items": [
+        {
+          "desc": "日历",
+          "name": "Calendar",
+          "path": "/calendar"
+        },
+        {
+          "desc": "时间线",
+          "name": "Timeline",
+          "path": "/timeline"
+        },
+        {
+          "desc": "卡片",
+          "name": "Card",
+          "path": "/card"
+        },
+        {
+          "desc": "消息提示",
+          "name": "Message",
+          "path": "/message"
+        },
+        {
+          "desc": "标签",
+          "name": "Tag",
+          "path": "/tag"
+        },
+        {
+          "desc": "上传",
+          "name": "Upload",
+          "path": "/upload"
+        },
+        {
+          "desc": "日期选择器",
+          "name": "DatePicker",
+          "path": "/datePicker"
+        },
+        {
+          "desc": "单选",
+          "name": "Box",
+          "path": "/box"
+        },
+        {
+          "desc": "其他",
+          "name": "Other",
+          "path": "/othr"
         }
       ]
     },
     {
       "desc": "页面组件",
-      "path": "/page",
+      "path": "",
       "items": [
         {
-          "desc": "Login 登录页",
-          "name": "login",
+          "desc": "登录页",
+          "name": "Login",
           "path": "/login"
         },
         {
-          "desc": "ReserveTime 时间预定页",
-          "name": "reserveTime",
+          "desc": "日历页",
+          "name": "ReserveTime",
           "path": "/reserveTime"
+        },
+        {
+          "desc": "普通增删改成页",
+          "name": "Crud",
+          "path": "/crud"
+        },
+        {
+          "desc": "图表页",
+          "name": "Echarts",
+          "path": "/echarts"
+        },
+        {
+          "desc": "暂无数据页",
+          "name": "NoData",
+          "path": "/noData"
+        },
+        {
+          "desc": "信息录入页",
+          "name": "Add",
+          "path": "/add"
+        }
+      ]
+    },
+    {
+      "desc": "统一配置项",
+      "path": "",
+      "items": [
+        {
+          "desc": "Axios配置",
+          "name": "Axios",
+          "path": "/axios"
+        },
+        {
+          "desc": "统一下载",
+          "name": "Download",
+          "path": "/download"
+        },
+        {
+          "desc": "图片流转换",
+          "name": "AuthCode",
+          "path": "/authCode"
         }
       ]
     }

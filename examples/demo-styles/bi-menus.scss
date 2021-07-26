@@ -1,0 +1,19 @@
+.bi-menus {
+  @include wh;
+  .el-submenu,
+  .el-menu-item-group {
+    padding-left: 0 !important;
+  }
+  .el-submenu__title {
+    padding-left: 20px !important;
+  }
+  .s-btn {
+    border-bottom: 1px solid #ccc;
+  }
+}
+.t-menus {
+  height: 400px;
+  .menu {
+    height: calc(100% - 48px);
+  }
+}
